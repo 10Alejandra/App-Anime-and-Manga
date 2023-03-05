@@ -1,0 +1,45 @@
+<!-- https://kitsu.io/api/edge/anime?page[limit]=10&page[offset]=50 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="import" href="./cards.html" id="cardsHTML"/>
+</head>
+<body>
+    <div class="container">
+        <div class="main-nav">
+            <ul class="nav">
+                <a href="#" class="inicio">Inicio</a>
+                <a href="#" class="anime" id="anime" >Anime</a>
+                <a href="#" class="manga" id="manga">Manga</a>
+            </ul>
+        </div>
+
+        <div class="form">
+            <form >
+                <input type="text" id="name" placeholder="Name Anime" >
+                <button class="search" id="search" type="submit">Search</button>
+            </form>            
+        </div>
+        <div class="cards-main">
+            <div class="card"></div>  
+        </div>
+        <div class="buttons">
+            <button class="back" id="back" >Back</button>
+            <select name="limit" id="limit">
+                <option value="5" selected>5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+            <button  type="submit" class="next" id="next" >Next</button>
+        </div>
+
+    </div>
+   <script src="/js/main.js"></script>
+</body>
+</html>
